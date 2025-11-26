@@ -24,7 +24,7 @@ public class Login extends JFrame {
                 String userInput = loginInput.getText();
                 String hasloInput = new String(passwordField1.getPassword());
                 if (userInput.equals("login") && hasloInput.equals("haslo")) {
-                    proggression();
+                    //proggression();
                     lblWait.setText("Zalogowano do systemu");
                     System system = new System();
                 } else {
@@ -39,7 +39,7 @@ public class Login extends JFrame {
             lblWait.setText("Proszę czekać...");
             progressBar1.setValue(i);
             try{
-                Thread.sleep(100);
+                Thread.sleep(10);
             }catch (InterruptedException e){
                 e.printStackTrace();
             }
